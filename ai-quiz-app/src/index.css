@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Styles ===== */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+/* ===== Floating Animation ===== */
+
+@keyframes floatY {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatX {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0px); }
+}
+
+.animate-floatY {
+  animation: floatY 10s ease-in-out infinite;
+}
+
+.animate-floatX {
+  animation: floatX 14s ease-in-out infinite;
+}
+/* ===== AI GRID BACKGROUND ANIMATION ===== */
+
+@keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 60px 60px;
+  }
+}
+
+.ai-grid {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+
+  animation: moveGrid 20s linear infinite;
+}

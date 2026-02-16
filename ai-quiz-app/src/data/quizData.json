@@ -1,0 +1,24 @@
+[
+  {
+    "question": "What is Machine Learning?",
+    "options": [
+      "A type of AI",
+      "A programming language",
+      "A database",
+      "A browser"
+    ],
+    "answer": 0,
+    "bloom": "Remember"
+  },
+  {
+    "question": "Which algorithm is supervised?",
+    "options": [
+      "K-Means",
+      "Linear Regression",
+      "Apriori",
+      "PCA"
+    ],
+    "answer": 1,
+    "bloom": "Understand"
+  }
+]
